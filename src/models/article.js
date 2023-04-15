@@ -5,6 +5,7 @@ const AtricleSchema = new mongoose.Schema(
     {
         userId: { type: String },
         articleLink: { type: String },
+        highlights: { type: String },
     },
     { timestamps: true }
 )
