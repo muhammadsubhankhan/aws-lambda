@@ -1,0 +1,35 @@
+export default {
+    numeric: 'Please enter a valid number in :attribute field',
+    default: 'Please fix the following errors',
+    invalidScope: 'You are not allowed to :attribute',
+    alreadyExists: ':attribute already exists',
+    notFound: 'This :attribute does not exist',
+    labelNotFound: ':attribute field does not exist',
+    required: ':attribute field is required',
+    integer: ':attribute field should be integer',
+    boolean: ':attribute field should be boolean',
+    string: ':attribute field should be string',
+    valid: 'Please enter a valid :attribute',
+    length: ':attribute must be between :min and :max characters',
+    numberLength: ':attribute must be between :min and :max digits',
+    minLength: ' :attribute length should be  atleast :min ',
+    maxLength: ':attribute must be between :max characters',
+    invalidDate: ":attribute valid format is 'YYYY-MM-DD HH:mm:ssZ'",
+    alreadyVerified: 'This user is already verified',
+    notVerified: 'This user is not verified',
+    userDisabled: 'The user account has been disabled by an administrator.',
+    password: {
+        length: 'Password should be at least 6 characters',
+        mismatch: 'The new passwords you entered do not match',
+        characters:
+            'New password must contain at least one uppercase letter, one lowercase letter, one number, and a minimum of 8 characters',
+        same: 'New password cannot be same as current password',
+        allFields: 'Please fill all of the required password fields',
+        invalid: 'The password you have entered is incorrect',
+    },
+    validOptions:
+        'Please enter a valid :attribute. Valid options are: :options',
+    fileType:
+        ':fileName has invalid file format. The valid formats are :formats',
+    fileSize: 'The file is too large',
+}
