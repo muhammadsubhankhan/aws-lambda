@@ -1,67 +1,67 @@
 {
-  "name": "aws-lambda",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".babelrc.js",
-  "engines": {
-    "npm": ">=6.11.3",
-    "node": ">=14.20.0"
-  },
-  "scripts": {
-    "start": "babel-node ./dist/index.js",
-    "transpile": "babel src --out-dir dist --copy-files",
-    "clean": "rimraf dist",
-    "build": "npm run clean && npm run transpile",
-    "dev": "nodemon --watch src --exec \"eslint src --fix && babel-node\" ./src/index.js",
-    "lintfix": "eslint src --fix"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "aws-sdk": "^2.1359.0",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "crypto-js": "^4.1.1",
-    "dayjs": "^1.11.2",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "express-validator": "^6.14.1",
-    "lodash": "^4.17.21",
-    "lumie": "^0.1.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.13.0",
-    "@babel/core": "^7.13.1",
-    "@babel/node": "^7.13.0",
-    "@babel/preset-env": "^7.13.5",
-    "@babel/register": "^7.13.0",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
-    "babel-minify": "^0.5.1",
-    "eslint": "^6.8.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-lodash": "^7.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-promise": "^4.3.1",
-    "husky": "^4.3.8",
-    "lint-staged": "^13.0.3",
-    "nodemon": "^2.0.16",
-    "prettier": "^2.6.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "aws-lambda",
+    "version": "1.0.0",
+    "description": "",
+    "main": ".babelrc.js",
+    "engines": {
+        "npm": ">=6.11.3",
+        "node": ">=14.20.0"
+    },
+    "scripts": {
+        "start": "babel-node ./dist/index.js",
+        "transpile": "babel src --out-dir dist --copy-files",
+        "clean": "rimraf dist",
+        "build": "npm run clean && npm run transpile",
+        "dev": "nodemon --watch src --exec \"eslint src --fix && babel-node\" ./src/index.js",
+        "lintfix": "eslint src --fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "aws-sdk": "^2.1359.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
+        "dayjs": "^1.11.2",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "express-validator": "^6.14.1",
+        "lodash": "^4.17.21",
+        "lumie": "^0.1.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.13.0",
+        "@babel/core": "^7.13.1",
+        "@babel/node": "^7.13.0",
+        "@babel/preset-env": "^7.13.5",
+        "@babel/register": "^7.13.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.2.2",
+        "babel-minify": "^0.5.1",
+        "eslint": "^6.8.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-lodash": "^7.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-promise": "^4.3.1",
+        "husky": "^4.3.8",
+        "lint-staged": "^13.0.3",
+        "nodemon": "^2.0.16",
+        "prettier": "^2.6.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint --fix",
+            "git add"
+        ]
     }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  }
 }
